@@ -44,10 +44,11 @@ if __name__ == '__main__':
         sys.exit(message)
     height = sys.argv[1]
     width = height
-    if len(sys.argv) > 3:
-        width = sys.argv[1]
+    if len(sys.argv) > 2:
+        width = sys.argv[2]
 
-    area = area_of_rectangle(height, width)
+    area = int(height) * int(width)
+   
 
     message = "The area of a {h} X {w} rectangle is {a}".format(
             h = height,
